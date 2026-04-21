@@ -1319,143 +1319,71 @@
 <div class="slide" id="slide-6">
     <div class="section-header">
         <div class="section-number">PART 03</div>
-        <h2>AI能力边界</h2>
-        <p class="section-subtitle">给管理者的系统说明 —— 结合柯莱特业务场景</p>
+        <h2>AI能力边界与适用场景</h2>
+        <p class="section-subtitle">结合柯莱特业务 —— 判断哪些场景值得投入</p>
     </div>
 
     <div class="content">
-        <div class="quote-box">
-            <p>AI最不适合直接承担"高风险最终决策、无监督长流程执行、绝对正确性要求极高"的工作</p>
+        <div class="quote-box" style="margin-bottom: 16px;">
+            <p>当今AI的竞争力既来自模型，也来自系统设计。柯莱特应把AI定位为<strong>"顾问增强"和"效率工具"</strong>，而非替代。</p>
         </div>
 
         <div class="columns" style="gap: 20px;">
-            <!-- AI能做到的 -->
-            <div class="column" style="border-color: rgba(34,197,94,0.3);">
-                <h4 style="color: #4ade80;">✅ AI现在能做什么</h4>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    <div style="background: rgba(34,197,94,0.06); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
+            <!-- 左列：能做 -->
+            <div class="column" style="border-color: rgba(34,197,94,0.35);">
+                <h4 style="color: #4ade80; margin-bottom: 10px;">✅ AI现在能做什么</h4>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                    <div style="background: rgba(34,197,94,0.07); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
                         <strong style="color: #e0c080;">📄 信息理解与表达</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">阅读长文档、抽取结构化信息、生成报告初稿</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#88cc88;"><strong>→ 柯莱特举例：</strong>SAP项目蓝图文档自动摘要、合规报告生成、金融监管文件解析</p>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">阅读长文档、抽取结构化信息、生成报告初稿</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#88cc88;"><strong>→ 举例：</strong>SAP蓝图自动摘要 / 合规报告初稿生成 / 金融监管文件解析</p>
                     </div>
-                    <div style="background: rgba(34,197,94,0.06); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
-                        <strong style="color: #e0c080;">💻 编码辅助</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">辅助开发、提速调试、生成样板代码</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#88cc88;"><strong>→ 柯莱特举例：</strong>ITO开发人员代码补全/SAP接口代码生成/测试用例批量生成</p>
+                    <div style="background: rgba(34,197,94,0.07); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
+                        <strong style="color: #e0c080;">💻 编码辅助与测试生成</strong>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">辅助开发、提速调试、生成样板代码、批量生成测试用例</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#88cc88;"><strong>→ 举例：</strong>ITO代码补全提速30-50% / SAP接口自动化测试用例生成</p>
                     </div>
-                    <div style="background: rgba(34,197,94,0.06); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
-                        <strong style="color: #e0c080;">🧠 知识检索与问答</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">基于历史项目、文档、案例进行检索与匹配</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#88cc88;"><strong>→ 柯莱特举例：</strong>金融合规知识库问答/历史工单问题匹配/SAP运维FAQ</p>
+                    <div style="background: rgba(34,197,94,0.07); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
+                        <strong style="color: #e0c080;">🧠 知识检索与历史匹配</strong>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">基于30年项目积累的文档、案例、工单进行秒级检索与匹配</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#88cc88;"><strong>→ 举例：</strong>金融合规知识问答 / 新问题→历史解决方案秒级匹配</p>
                     </div>
-                    <div style="background: rgba(34,197,94,0.06); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
+                    <div style="background: rgba(34,197,94,0.07); border-left: 3px solid #4ade80; padding: 10px 12px; border-radius: 4px;">
                         <strong style="color: #e0c080;">🔄 多步骤任务执行（Agent）</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">调用工具、执行多步任务、自动化流程</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#88cc88;"><strong>→ 柯莱特举例：</strong>运维工单自动分类+派发/代码提交→测试→部署流水线</p>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">调用工具、执行多步任务、自动化流程</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#88cc88;"><strong>→ 举例：</strong>运维工单自动分类+派发 / 代码提交→测试→部署流水线</p>
                     </div>
                 </div>
             </div>
-            <!-- AI做不到的 -->
-            <div class="column" style="border-color: rgba(239,68,68,0.3);">
-                <h4 style="color: #ef4444;">⚠️ AI仍然做不到（或需人工介入）</h4>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    <div style="background: rgba(239,68,68,0.06); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
-                        <strong style="color: #e0c080;">🚫 无监督长流程独立完成</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">需要跨部门协调、多轮沟通、需求澄清的长链条任务</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#ff8888;"><strong>→ 柯莱特举例：</strong>SAP实施项目从需求调研到上线交付的完整流程——AI能做辅助，但无法替代顾问主导</p>
+            <!-- 右列：做不到 -->
+            <div class="column" style="border-color: rgba(239,68,68,0.35);">
+                <h4 style="color: #ef4444; margin-bottom: 10px;">⚠️ AI仍然做不到（或需人工介入）</h4>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                    <div style="background: rgba(239,68,68,0.07); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
+                        <strong style="color: #e0c080;">🚫 无监督长流程端到端执行</strong>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">跨部门协调、多轮沟通、需求澄清的长链条任务</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#ff8888;"><strong>→ 举例：</strong>SAP实施项目从需求调研到上线交付——AI能做辅助，无法替代顾问主导</p>
                     </div>
-                    <div style="background: rgba(239,68,68,0.06); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
+                    <div style="background: rgba(239,68,68,0.07); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
                         <strong style="color: #e0c080;">🚫 高风险关键决策</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">合规判断、架构决策、财务审批等必须人工承担最终责任</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#ff8888;"><strong>→ 柯莱特举例：</strong>金融系统改造的核心参数决策/合规改造方案审批——必须人工签字</p>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">合规判断、架构决策、财务审批等必须人工承担最终责任</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#ff8888;"><strong>→ 举例：</strong>金融系统改造核心参数决策 / 合规改造方案审批——必须人工签字</p>
                     </div>
-                    <div style="background: rgba(239,68,68,0.06); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
-                        <strong style="color: #e0c080;">🚫 100%准确性要求</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">仍存在"幻觉"问题，对准确性要求极高的工作必须人工复核</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#ff8888;"><strong>→ 柯莱特举例：</strong>金融合规报告最终审核/法律文本对照——AI生成，人工确认</p>
+                    <div style="background: rgba(239,68,68,0.07); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
+                        <strong style="color: #e0c080;">🚫 100%准确性要求的工作</strong>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">AI仍存在"幻觉"，对准确性要求极高的工作必须人工复核</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#ff8888;"><strong>→ 举例：</strong>金融合规报告 / 法律文本对照——AI生成初稿，人工确认</p>
                     </div>
-                    <div style="background: rgba(239,68,68,0.06); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
-                        <strong style="color: #e0c080;">🚫 复杂关系与谈判处理</strong>
-                        <p style="margin:4px 0 0; font-size:0.8em; color:#b0b8cc;">理解客户真实顾虑、处理多方利益、推进复杂谈判</p>
-                        <p style="margin:4px 0 0; font-size:0.76em; color:#ff8888;"><strong>→ 柯莱特举例：</strong>大客户复杂项目谈判/多方利益协调——需要顾问情商，不可替代</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="warning-box" style="margin-top: 20px;">
-            <h4>⚡ 关键认知</h4>
-            <p>AI的本质不是数据库，也不是规则树，而是基于Transformer的大规模概率模型。企业真正要管理的不是"模型聪不聪明"，而是<strong>"哪些环节让模型进入流程、用什么数据、接哪些工具、如何复核、如何留痕、如何限权"</strong>。</p>
-        </div>
-    </div>
-    <div class="slide-number">06</div>
-</div>
-
-<!-- Slide 7: AI Best Practices -->
-<div class="slide" id="slide-7">
-    <div class="section-header">
-        <div class="section-number">PART 03 - 续</div>
-        <h2>AI适用场景深度分析</h2>
-        <p class="section-subtitle">结合柯莱特业务，哪些场景值得优先投入</p>
-    </div>
-
-    <div class="content">
-        <div class="columns" style="gap: 20px;">
-            <!-- 最佳适用 -->
-            <div class="column" style="border-color: rgba(34, 197, 94, 0.3);">
-                <h4 style="color: #4ade80;">🎯 最适合投入的场景</h4>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    <div style="background: rgba(34,197,94,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #88ffaa;">📄 文档处理与知识抽取</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">SAP蓝图、配置说明、运维工单、技术文档——信息密度高、可结构化、AI输出易校验</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#88cc88;"><strong>举例：</strong>SAP实施项目蓝图自动摘要；历史工单问题→解决方案自动归档</p>
-                    </div>
-                    <div style="background: rgba(34,197,94,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #88ffaa;">💻 代码辅助与测试生成</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">ITO开发/测试中大量重复性代码工作；测试用例可自动生成并校验</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#88cc88;"><strong>举例：</strong>ITO代码补全提速30-50%；SAP接口自动化测试用例生成</p>
-                    </div>
-                    <div style="background: rgba(34,197,94,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #88ffaa;">🧠 知识检索与历史匹配</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">30年项目积累散落在文档、案例、工单中；AI让检索秒级完成</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#88cc88;"><strong>举例：</strong>金融合规知识问答；新项目遇到旧问题→秒级匹配历史解决方案</p>
-                    </div>
-                    <div style="background: rgba(34,197,94,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #88ffaa;">🔄 辅助决策（人工最终判断）</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">提供选项、风险提示、方案对比；人工负责最终选择和签字</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#88cc88;"><strong>举例：</strong>SAP迁移影响分析→顾问判断；金融合规改造路径→人工审批</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 暂不适用 -->
-            <div class="column" style="border-color: rgba(239, 68, 68, 0.3);">
-                <h4 style="color: #ef4444;">🚫 暂不适合投入的场景</h4>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    <div style="background: rgba(239,68,68,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #ff9999;">❌ 高风险最终决策</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">财务审批、合规最终判断——必须人工承担法律责任</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#ff8888;"><strong>举例：</strong>金融系统改造方案终版审批——AI提供分析，人工负责签字</p>
-                    </div>
-                    <div style="background: rgba(239,68,68,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #ff9999;">❌ 无监督长流程端到端执行</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">SAP实施从需求调研→蓝图设计→开发→测试→上线全流程AI无法独立完成</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#ff8888;"><strong>举例：</strong>大客户SAP上线项目——AI只能辅助局部，无法替代项目组</p>
-                    </div>
-                    <div style="background: rgba(239,68,68,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #ff9999;">❌ 100%准确性要求的工作</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">AI存在幻觉，直接输出用于正式文件有风险，必须人工校对</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#ff8888;"><strong>举例：</strong>金融监管报告→AI生成初稿，必须人工审核后才能提交</p>
-                    </div>
-                    <div style="background: rgba(239,68,68,0.06); padding: 12px; border-radius: 6px;">
-                        <strong style="color: #ff9999;">❌ 复杂客户关系与谈判</strong>
-                        <p style="margin:5px 0 0; font-size:0.78em; color:#b0b8cc;">理解客户真实顾虑、处理多方利益、推动复杂谈判——需要高情商</p>
-                        <p style="margin:4px 0 0; font-size:0.75em; color:#ff8888;"><strong>举例：</strong>大客户复杂项目谈判——AI无法替代顾问的客户关系能力</p>
+                    <div style="background: rgba(239,68,68,0.07); border-left: 3px solid #ef4444; padding: 10px 12px; border-radius: 4px;">
+                        <strong style="color: #e0c080;">🚫 复杂客户关系与谈判</strong>
+                        <p style="margin:4px 0 0; font-size:0.78em; color:#b0b8cc;">理解客户真实顾虑、处理多方利益、推动复杂谈判</p>
+                        <p style="margin:4px 0 0; font-size:0.74em; color:#ff8888;"><strong>→ 举例：</strong>大客户复杂项目谈判——需要顾问情商，不可替代</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 适用性自检问题 -->
+        <!-- 自检四问 -->
         <div style="background: rgba(212,175,55,0.08); border: 1px solid rgba(212,175,55,0.25); border-radius: 8px; padding: 14px 20px; margin-top: 16px;">
             <h4 style="color: #e0c080; margin-bottom: 10px; font-size: 0.88em;">🧭 判断一个场景是否适合AI的自检四问</h4>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.78em;">
@@ -1474,16 +1402,17 @@
             </div>
         </div>
 
-        <div class="success-box" style="margin-top: 16px;">
-            <h4>💡 核心原则</h4>
-            <p>当今AI的竞争力既来自模型，也来自系统设计。企业应该把AI定位为<strong>"顾问增强"和"效率工具"</strong>，而不是"数字员工替代"。</p>
+        <!-- 关键认知 -->
+        <div class="warning-box" style="margin-top: 14px;">
+            <h4>⚡ 关键认知</h4>
+            <p>AI本质是概率模型，不是规则引擎。企业真正要管理的是<strong>"哪些环节让模型进入流程、用什么数据、接哪些工具、如何复核、如何留痕、如何限权"</strong>。</p>
         </div>
     </div>
-    <div class="slide-number">07</div>
+    <div class="slide-number">06</div>
 </div>
 
-<!-- Slide 8: Core Question -->
-<div class="slide" id="slide-8">
+<!-- Slide 7: Core Question (原slide-8) -->
+<div class="slide" id="slide-7">
     <div class="section-header">
         <div class="section-number">PART 04</div>
         <h2>AI转型核心问题</h2>
@@ -1556,11 +1485,11 @@
             <p>柯莱特最适合采用<strong>"先内部交付提效，再把成熟能力商品化，最后形成持续服务收入"</strong>的路径，而不是一开始追求全自动Agent替代。</p>
         </div>
     </div>
-    <div class="slide-number">08</div>
+    <div class="slide-number">07</div>
 </div>
 
-<!-- Slide 9: Why Camelot -->
-<div class="slide" id="slide-9">
+<!-- Slide 8: Why Camelot -->
+<div class="slide" id="slide-8">
     <div class="section-header">
         <div class="section-number">PART 04 - 续</div>
         <h2>为什么柯莱特适合AI增强</h2>
@@ -1612,11 +1541,11 @@
             <p>柯莱特最适合的AI路径：<strong>"把Know-how从顾问脑子里→系统里→AI里"</strong>——让个人能力变成组织能力，让AI成为护城河的放大器，而不是替代品。</p>
         </div>
     </div>
-    <div class="slide-number">09</div>
+    <div class="slide-number">08</div>
 </div>
 
-<!-- Slide 10: Five-Step Method -->
-<div class="slide" id="slide-10">
+<!-- Slide 9: Five-Step Method (原slide-10) -->
+<div class="slide" id="slide-9">
     <div class="section-header">
         <div class="section-number">PART 04 - 核心方法</div>
         <h2>五步思考路径</h2>
@@ -1665,11 +1594,11 @@
             </tbody>
         </table>
     </div>
-    <div class="slide-number">10</div>
+    <div class="slide-number">09</div>
 </div>
 
-<!-- Slide 11: Seven Business Lines -->
-<div class="slide" id="slide-11">
+<!-- Slide 10: Seven Business Lines -->
+<div class="slide" id="slide-10">
     <div class="section-header">
         <div class="section-number">PART 04 - 续</div>
         <h2>七条业务线分析</h2>
@@ -1724,11 +1653,11 @@
             </div>
         </div>
     </div>
-    <div class="slide-number">11</div>
+    <div class="slide-number">10</div>
 </div>
 
-<!-- Slide 11b: 为什么要先说组织与绩效 -->
-<div class="slide" id="slide-11b">
+<!-- Slide 10b: 为什么要先说组织与绩效 -->
+<div class="slide" id="slide-10b">
     <div class="section-header">
         <div class="section-number">PART 04 - 过渡</div>
         <h2>先把框架定好，再谈每条业务线</h2>
@@ -1775,11 +1704,11 @@
             <p>📌 <strong>接下来两页</strong>，先把组织架构和绩效体系讲清楚。然后再进入每条业务线，因为每条业务线的具体策略都是在这个框架下展开的，方向是统一的，只是场景不同。</p>
         </div>
     </div>
-    <div class="slide-number">11b</div>
+    <div class="slide-number">10b</div>
 </div>
 
-<!-- Slide 11c: 组织关系如何重构（原15c，移至此处） -->
-<div class="slide" id="slide-11c">
+<!-- Slide 10c: 组织关系如何重构（原11c） -->
+<div class="slide" id="slide-10c">
     <div class="section-header">
         <div class="section-number">PART 04 - 组织设计</div>
         <h2>组织关系如何重构</h2>
@@ -1843,11 +1772,11 @@
             </div>
         </div>
     </div>
-    <div class="slide-number">11c</div>
+    <div class="slide-number">10c</div>
 </div>
 
-<!-- Slide 11d: 绩效体系如何重构（原15d，移至此处） -->
-<div class="slide" id="slide-11d">
+<!-- Slide 10d: 绩效体系如何重构（原11d） -->
+<div class="slide" id="slide-10d">
     <div class="section-header">
         <div class="section-number">PART 04 - 绩效设计</div>
         <h2>绩效体系如何重构</h2>
@@ -1913,11 +1842,11 @@
             </div>
         </div>
     </div>
-    <div class="slide-number">11d</div>
+    <div class="slide-number">10d</div>
 </div>
 
-<!-- Slide 12: SAP Detail 1 - 国产化替代影响 -->
-<div class="slide" id="slide-12">
+<!-- Slide 11: SAP Detail 1 - 国产化替代影响 -->
+<div class="slide" id="slide-11">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解①</div>
         <h2>SAP/企业应用服务（1/2）</h2>
@@ -1963,11 +1892,11 @@
             <p>真正危险的不是"有没有SAP客户"，而是<strong>"公司是否仍把增长主要押在SAP新建项目上"</strong>。收入结构必须从"新建项目规模"转向"存量运维+替换迁移机会"。</p>
         </div>
     </div>
-    <div class="slide-number">12</div>
+    <div class="slide-number">11</div>
 </div>
 
-<!-- Slide 12b: SAP Detail 2 - AI转型路径 -->
-<div class="slide" id="slide-12b">
+<!-- Slide 11b: SAP Detail 2 - AI转型路径 -->
+<div class="slide" id="slide-11b">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解①</div>
         <h2>SAP/企业应用服务（2/2）</h2>
@@ -2031,11 +1960,11 @@
             <p><strong>分析逻辑：</strong>当前AI不能可靠完成长链条、自主、无监督任务。SAP实施规则复杂、责任边界清晰、上线风险高。<strong>结论：</strong>这条线更适合做"顾问增强"和"运维增强"，而不是直接替代顾问。</p>
         </div>
     </div>
-    <div class="slide-number">12b</div>
+    <div class="slide-number">11b</div>
 </div>
 
-<!-- Slide 13: ITO Detail 1 - 业务规模与定位 -->
-<div class="slide" id="slide-13">
+<!-- Slide 12: ITO Detail 1 - 业务规模与定位 -->
+<div class="slide" id="slide-12">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解②</div>
         <h2>ITO/技术与人员服务（1/2）</h2>
@@ -2085,11 +2014,11 @@
             <p>ITO的核心价值在于<strong>把技术能力转化为可交付的解决方案</strong>。这既是柯莱特的核心竞争力，也是AI最容易赋能的环节——因为代码、文档、知识都是<strong>天然的结构化数据</strong>。</p>
         </div>
     </div>
-    <div class="slide-number">13</div>
+    <div class="slide-number">12</div>
 </div>
 
-<!-- Slide 13b: ITO Detail 2 - AI转型逻辑与组件库 -->
-<div class="slide" id="slide-13b">
+<!-- Slide 12b: ITO Detail 2 - AI转型逻辑与组件库 -->
+<div class="slide" id="slide-12b">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解②</div>
         <h2>ITO/技术与人员服务（2/2）</h2>
@@ -2144,11 +2073,11 @@
             当版本按期率、缺陷率、工单闭环时效都能被量化时，客户购买的不再是工时，而是<strong>稳定的交付结果</strong>。AI带来的效率提升，才能被公司自己留存，而不是全部被客户压价吸收。</p>
         </div>
     </div>
-    <div class="slide-number">13b</div>
+    <div class="slide-number">12b</div>
 </div>
 
-<!-- Slide 14: Finance Detail 1 - Know-how价值分析 -->
-<div class="slide" id="slide-14">
+<!-- Slide 13: Finance Detail 1 - Know-how价值分析 -->
+<div class="slide" id="slide-13">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解③</div>
         <h2>金融解决方案（1/2）</h2>
@@ -2190,11 +2119,11 @@
             这是新进入者无法复制的优势。</p>
         </div>
     </div>
-    <div class="slide-number">14</div>
+    <div class="slide-number">13</div>
 </div>
 
-<!-- Slide 14b: Finance Detail 2 - AI + Know-how结合 -->
-<div class="slide" id="slide-14b">
+<!-- Slide 13b: Finance Detail 2 - AI + Know-how结合 -->
+<div class="slide" id="slide-13b">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解③</div>
         <h2>金融解决方案（2/2）</h2>
@@ -2254,11 +2183,11 @@
             这样做有两个好处：①顾问效率大幅提升（减少重复劳动）；②柯莱特拥有了可复制的金融AI能力（不依赖具体的人，而是依赖系统）。</p>
         </div>
     </div>
-    <div class="slide-number">14b</div>
+    <div class="slide-number">13b</div>
 </div>
 
-<!-- Slide 15: Manufacturing - 轻量合并 -->
-<div class="slide" id="slide-15">
+<!-- Slide 14: Manufacturing - 轻量合并 -->
+<div class="slide" id="slide-14">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解④</div>
         <h2>制造业解决方案</h2>
@@ -2295,11 +2224,11 @@
             <p>制造业应作为<strong>第二优先</strong>，与SAP/ITO/金融形成差异化的增长主线。重点不是替代现有业务，而是<strong>做成可复制的行业解决方案</strong>，逐步摆脱对单一软件的依赖。</p>
         </div>
     </div>
-    <div class="slide-number">15</div>
+    <div class="slide-number">14</div>
 </div>
 
-<!-- Slide 15b: Cloud & BPO - 轻量合并 -->
-<div class="slide" id="slide-15b">
+<!-- Slide 14b: Cloud & BPO - 轻量合并 -->
+<div class="slide" id="slide-14b">
     <div class="section-header">
         <div class="section-number">PART 04 - 业务线详解⑤</div>
         <h2>通用数字化与物流/BPO</h2>
@@ -2332,11 +2261,11 @@
             </div>
         </div>
     </div>
-    <div class="slide-number">15b</div>
+    <div class="slide-number">14b</div>
 </div>
 
-<!-- Slide 16: 24-Month Roadmap -->
-<div class="slide" id="slide-16">
+<!-- Slide 15: 24-Month Roadmap -->
+<div class="slide" id="slide-15">
     <div class="section-header">
         <div class="section-number">PART 04 - 核心内容</div>
         <h2>24个月落地路线图</h2>
@@ -2380,11 +2309,11 @@
             </div>
         </div>
     </div>
-    <div class="slide-number">16</div>
+    <div class="slide-number">15</div>
 </div>
 
-<!-- Slide 17: Success Metrics -->
-<div class="slide" id="slide-17">
+<!-- Slide 16: Success Metrics -->
+<div class="slide" id="slide-16">
     <div class="section-header">
         <div class="section-number">PART 04 - 续</div>
         <h2>如何衡量"是否真的转型"</h2>
@@ -2427,11 +2356,11 @@
             <p><strong>重要提示：</strong>只变第一层不算转型，四层一起变化才接近真正的业务转型。如果只追求效率提升，可能会陷入"用AI工具但业务本质没变"的陷阱。</p>
         </div>
     </div>
-    <div class="slide-number">17</div>
+    <div class="slide-number">16</div>
 </div>
 
-<!-- Slide 18: Governance -->
-<div class="slide" id="slide-18">
+<!-- Slide 17: Governance -->
+<div class="slide" id="slide-17">
     <div class="section-header">
         <div class="section-number">PART 04 - 续</div>
         <h2>治理、风险与前提条件</h2>
@@ -2463,11 +2392,11 @@
             <p>否则AI会停留在"额外工作"而不是"核心工作流"。业务owner必须有动力去推动AI落地，而不是被动等待IT部门交付。</p>
         </div>
     </div>
-    <div class="slide-number">18</div>
+    <div class="slide-number">17</div>
 </div>
 
-<!-- Slide 19: Priority Summary -->
-<div class="slide" id="slide-19">
+<!-- Slide 18: Priority Summary -->
+<div class="slide" id="slide-18">
     <div class="section-header">
         <div class="section-number">SUMMARY</div>
         <h2>业务优先级总结</h2>
@@ -2518,11 +2447,11 @@
             </tbody>
         </table>
     </div>
-    <div class="slide-number">19</div>
+    <div class="slide-number">18</div>
 </div>
 
-<!-- Slide 20: Conclusion -->
-<div class="slide" id="slide-20">
+<!-- Slide 19: Conclusion -->
+<div class="slide" id="slide-19">
     <div class="section-header">
         <div class="section-number">CONCLUSION</div>
         <h2>核心结论</h2>
@@ -2561,8 +2490,8 @@
     <div class="slide-number">20</div>
 </div>
 
-<!-- Slide 21: Thank You -->
-<div class="slide slide-cover" id="slide-21">
+<!-- Slide 20: Thank You -->
+<div class="slide slide-cover" id="slide-20">
     <div class="logo-container">
         <div class="logo">
             <span class="logo-icon">☁</span>
@@ -2586,28 +2515,27 @@
     <a href="#slide-4b" title="AI影响"></a>
     <a href="#slide-5" title="业务线分析"></a>
     <a href="#slide-6" title="AI能力"></a>
-    <a href="#slide-7" title="AI适用场景"></a>
-    <a href="#slide-8" title="转型定义"></a>
+    <a href="#slide-8" title="转型核心问题"></a>
     <a href="#slide-9" title="为什么柯莱特"></a>
     <a href="#slide-10" title="五步法"></a>
-    <a href="#slide-11" title="七条业务线"></a>
-    <a href="#slide-11b" title="为何先定框架"></a>
-    <a href="#slide-11c" title="组织重构"></a>
-    <a href="#slide-11d" title="绩效重构"></a>
-    <a href="#slide-12" title="SAP-1"></a>
-    <a href="#slide-12b" title="SAP-2"></a>
-    <a href="#slide-13" title="ITO-1"></a>
-    <a href="#slide-13b" title="ITO-2"></a>
-    <a href="#slide-14" title="金融-1"></a>
-    <a href="#slide-14b" title="金融-2"></a>
-    <a href="#slide-15" title="制造业"></a>
-    <a href="#slide-15b" title="上云/BPO"></a>
-    <a href="#slide-16" title="24月路线图"></a>
-    <a href="#slide-17" title="成功标准"></a>
-    <a href="#slide-18" title="治理风险"></a>
-    <a href="#slide-19" title="优先级"></a>
-    <a href="#slide-20" title="核心结论"></a>
-    <a href="#slide-21" title="谢谢"></a>
+    <a href="#slide-10" title="七条业务线"></a>
+    <a href="#slide-10b" title="为何先定框架"></a>
+    <a href="#slide-10c" title="组织重构"></a>
+    <a href="#slide-10d" title="绩效重构"></a>
+    <a href="#slide-11" title="SAP-1"></a>
+    <a href="#slide-11b" title="SAP-2"></a>
+    <a href="#slide-12" title="ITO-1"></a>
+    <a href="#slide-12b" title="ITO-2"></a>
+    <a href="#slide-13" title="金融-1"></a>
+    <a href="#slide-13b" title="金融-2"></a>
+    <a href="#slide-14" title="制造业"></a>
+    <a href="#slide-14b" title="上云/BPO"></a>
+    <a href="#slide-15" title="24月路线图"></a>
+    <a href="#slide-16" title="成功标准"></a>
+    <a href="#slide-17" title="治理风险"></a>
+    <a href="#slide-18" title="优先级"></a>
+    <a href="#slide-19" title="核心结论"></a>
+    <a href="#slide-20" title="谢谢"></a>
 </nav>
 
 <script>

@@ -3,6 +3,15 @@
   "sessions": {
     "8d66cbfebb534c30abf1525d8c8bb9e5": [
       {
+        "expertId": "TrendResearcher",
+        "name": "风向标",
+        "profession": "行业趋势专家",
+        "avatarUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/avatars/06-Product/TrendResearcher/TrendResearcher.png",
+        "promptUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/experts/06-Product/TrendResearcher/TrendResearcher_zh.md",
+        "usedAt": 1776787906125,
+        "industryId": "all"
+      },
+      {
         "expertId": "UiDesigner",
         "name": "Sam",
         "profession": "UI设计师",
@@ -13,5 +22,5 @@
       }
     ]
   },
-  "lastUpdated": 1776002574536
+  "lastUpdated": 1776790589359
 }
